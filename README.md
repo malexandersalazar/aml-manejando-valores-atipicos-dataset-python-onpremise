@@ -1,6 +1,6 @@
 # Manejando valores atípicos en un Dataset de AML con Python (On-Premise)
 
-Dentro del proceso de la ciencia de datos, la limpieza de datos suele ser la etapa que más tiempo consume. A menos que sea necesario por limitaciones físicas, completar toda  esta tarea con computo en la nube puede ser una vía poco económica a comparación de hacerlo on-premise.
+Dentro del proceso de la ciencia de datos, la limpieza de datos suele ser la etapa que más tiempo consume. A menos que sea necesario por limitaciones físicas, completar toda  esta tarea con computo en la nube puede ser una vía poco económica a comparación de hacerlo on-premise. En esta ocasión, aprenderemos como hacerlo a través de un simple ejemplo para lidear con valores atípicos en un Dataset de AML.
 
 ## Pre-requisitos
 
@@ -176,7 +176,7 @@ Para que finalmente desde ahí, ya podamos registrarlo como un **Dataset** en nu
 <pre><code>dataset = Dataset.Tabular.from_delimited_files(datastore.path('flights_cleaned.csv'))
 dataset = dataset.register(workspace, 'Flights cleaned')</pre></code>
 
-![alt text](img/cleaned_uploaded.png "WORKSPACE DATA")
+![alt text](img/cleaned_uploaded.PNG "WORKSPACE DATA")
 
 ## Referencias
 
